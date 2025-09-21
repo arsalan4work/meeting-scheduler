@@ -1,4 +1,7 @@
-import { Button } from '@/components/ui/button'
+"use client"
+
+import { Button } from '../../components/ui/button'
+import { LoginLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -50,8 +53,8 @@ export default function Header() {
       </div>
       {/* Button */}
       <div className='gap-5 flex'>
-        <Button variant="ghost" className="transition-all duration-200">Login</Button>
-        <Button className="bg-blue-500 hover:text-white hover:bg-black transition-all duration-200 cursor-pointer">Get Started</Button>
+        <LoginLink><Button variant="ghost" className="transition-all duration-200">Login</Button></LoginLink>
+        <RegisterLink><Button className="bg-blue-500 hover:text-white hover:bg-black transition-all duration-200 cursor-pointer">Get Started</Button></RegisterLink>
       </div>
     </div>
   )
