@@ -12,5 +12,7 @@ export default async function middleware(req) {
 export const config = {
   matcher: [
     "/dashboard/:path*", // Protect dashboard + nested routes
+    "create-business",
+    "/dashboard",
   ],
 };
