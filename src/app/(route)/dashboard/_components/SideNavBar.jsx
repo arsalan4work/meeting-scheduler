@@ -47,10 +47,12 @@ export default function SideNavBar() {
         <Image src="/logo.svg" alt="Image Not Found!" width={50} height={50} />
       </div>
       <div>
-        <Button className="flex gap-2 w-full rounded-full mt-7">
-          <Plus />
-          Create
-        </Button>
+        <Link href="/create-meeting">
+          <Button className="flex gap-2 w-full rounded-full mt-7">
+            <Plus />
+            Create
+          </Button>
+        </Link>
       </div>
       <div className="mt-5 flex flex-col gap-5">
         {menu.map((item, index) => (
